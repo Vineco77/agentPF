@@ -7,25 +7,25 @@ import os
 load_dotenv()
 
 __llm = init_chat_model(
-    model="gpt-4o", api_key=os.getenv("OPENAI_API_KEY"), temperature=0.7
+    model="llama-3.1-8b-instant", model_provider="groq", api_key=os.getenv("GROQ_API_KEY"), temperature=0.7
 )
 
 agent_cartao_credito = create_agent(
     __llm,
     tools=[],
-    system_prompt={
+    system_prompt=(
         "Você é um especialista em cartão de crédito do banco MDBank. "
         "Ajude o cliente com dúvidas, solicitação e limites."
-    },
+    )
 )
 
 agente_abertura_conta = create_agent(
     __llm,
     tools=[],
-    system_prompt={
+    system_prompt=(
         "Você é um especialista em abertura de contas do banco MDBank. "
         "Ajude o cliente a abrir uma conta e explique os tipos disponiveis;"
-    },
+    ),
 )
 
 
