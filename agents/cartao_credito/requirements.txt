@@ -1,8 +1,7 @@
-a2a-sdk[http-server]
+a2a-sdk[http-server]==0.3.0
 httpx
 pydantic
 uvicorn
-fastapi
 langchain
 langchain-groq
 langchain-community
