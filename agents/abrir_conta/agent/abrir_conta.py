@@ -60,7 +60,7 @@ async def build_agent():
     return agent
 
 
-async def run_agent(mensagem: str, thread_id: str = "1"):
+async def run_agent(mensagem: str, thread_id: str = "2"):
     agent = await build_agent()
 
     resultado = await agent.ainvoke(

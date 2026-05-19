@@ -33,7 +33,7 @@ parser = JsonOutputParser(pydantic_object=RouterOutput)
 
 async def build_router_agent():
     agent = create_agent(
-        _llm,
+        __llm,
         tools=[],
         system_prompt=f"""
 Você é o roteador de agentes do MDBank, um banco digital moderno, seguro e confiável, especializado em fornecer soluções financeiras personalizadas para cada cliente.
@@ -82,7 +82,7 @@ Responda SEMPRE em JSON no formato:
 
 async def classifique_intencao_do_usuario(
     query: str,
-    thread_id: str = "1"
+    thread_id: str = "2"
 ) -> List[Dict[str, Any]]:
     agent = await build_router_agent()
 

@@ -84,7 +84,7 @@ async def build_cartao_agent():
     return agente_cartoes
 
 
-async def run_agent(mensagem: str, thread_id: str = "1"):
+async def run_agent(mensagem: str, thread_id: str = "2"):
     global agent
 
     if not agent:

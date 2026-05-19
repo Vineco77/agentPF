@@ -19,7 +19,7 @@ export default function ChatPage() {
     setLoading(true);
 
     const payload = {
-      thread_id: "1",
+      thread_id: "2",
       run_id: crypto.randomUUID(),
       messages: [
         {
