@@ -1,0 +1,36 @@
+{
+  "contas": {
+    "52819740847": {
+      "nome": "Vinicius Ribeiro",
+      "numero": 23484,
+      "saldo": 0.0
+    },
+    "12345678901": {
+      "nome": "Jo\u00e3o Silva",
+      "numero": 97464,
+      "saldo": 0.0
+    },
+    "12345678000": {
+      "nome": "Jo\u00e3o Silva",
+      "numero": 87021,
+      "saldo": 0.0
+    },
+    "98765432109": {
+      "nome": "Potira",
+      "numero": 32759,
+      "saldo": 0.0
+    }
+  },
+  "cartoes": {
+    "52819740847": {
+      "numero": 416875,
+      "tipo": "gold",
+      "limite": 4813
+    },
+    "12345678901": {
+      "numero": 990424,
+      "tipo": "Visa",
+      "limite": 4364
+    }
+  }
+}
